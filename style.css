@@ -1,0 +1,178 @@
+/*-- General Setup --*/
+html {
+  font-size: 55%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  color: #333; 
+  background-color: #f9f9f9; 
+  font-size: 1.6rem;
+  font-family: 'Gentium Book Plus', serif; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  min-height: 100vh; 
+  flex-direction: column; 
+}
+
+main {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+nav {
+  background-color: #663399; 
+  width: 100%; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 1em;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+}
+
+nav a:link, nav a:visited {
+  color: #fff; 
+  text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+  color: #F0F0F0; 
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: #F0F0F0; 
+}
+
+
+header {
+  width: 510px; 
+  margin: 6em auto 2em auto;
+}
+
+header img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 auto;
+  color: #663399; 
+}
+
+.small {
+  margin-top: 1em;
+  color: #663399; 
+  font-family: 'Lato', sans-serif; 
+  font-weight: 900; 
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+
+article {
+  width: 80%; 
+  max-width: 960px; 
+  font-size: 18px;
+  line-height: 1.3;
+  color: #333; 
+  margin: 0 auto; 
+  padding: 2rem; 
+}
+
+article figure {
+  width: 39%;
+  margin: 0 0 1.25em 1.25em;
+  float: right; 
+}
+
+article figcaption {
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+  color: #777; 
+}
+
+
+.pagination {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+  text-align: center; 
+}
+
+a.button {
+  border: 2px solid #663399; 
+  padding: .4em 1em;
+  text-decoration: none;
+  color: #663399; 
+  border-radius: 200px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 80%;
+}
+
+a.button:hover, a.button:active {
+  border-color: #551A8B; 
+  background-color: #f0f0f0; 
+  color: #222; 
+}
+
+/*-- Footer Styles --*/
+footer {
+  text-align: center;
+  padding: 1.5em 0 .5em 0;
+  background-color: #663399; /* Rebecca Purple background for footer */
+  color: #fff; /* White text on the dark footer */
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem; /* Slightly smaller font size for footer */
+  margin-top: 2em;
+}
+
+/*-- Media Queries --*/
+/* Adjusts layout for smaller screens */
+@media screen and (max-width: 768px) {
+  header { width: 96%; }
+  article { width: 96%; }
+  .pagination { width: 100%; }
+}
+
+/*-- Dropcap Style --*/
+.dropcap {
+  font-size: 4em;
+  float: left;
+  margin: 0;
+  line-height: .65;
+  color: #663399; /* Rebecca Purple for the dropcap letter */
+}
+
+/*-- Hero Unit Adjustments --*/
+header img {
+  max-width: 100%; /* Make sure image is responsive */
+}
+
+/*-- Additional Styling to Improve Page Aesthetics --*/
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+article p {
+  margin-bottom: 1em;
+}
+
